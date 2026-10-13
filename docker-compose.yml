@@ -1,0 +1,16 @@
+# Postgres + pgvector for the catalog: `npm run db`.
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: movies
+      POSTGRES_PASSWORD: movies
+      POSTGRES_DB: movies
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    shm_size: 4gb # parallel index builds use shared memory; Docker's default is 64 MB
+    command: postgres -c shared_buffers=512MB -c maintenance_work_mem=1GB -c max_wal_size=4GB
+volumes:
+  pgdata:

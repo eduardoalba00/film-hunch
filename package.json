@@ -1,0 +1,15 @@
+{
+  "name": "filmhunch",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "setup": "npm install && npm --prefix apps/api install && npm --prefix apps/web install",
+    "dev": "concurrently -k -n api,web -c yellow,cyan \"npm --prefix apps/api run dev\" \"npm --prefix apps/web run dev\"",
+    "db": "docker compose up -d db",
+    "seed": "npm --prefix apps/api run seed",
+    "seed:full": "npm --prefix apps/api run seed:full"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
