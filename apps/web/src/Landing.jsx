@@ -154,7 +154,7 @@ export function Landing() {
           <footer>
             <span className="footer-left"><span>{NAME} · Ranked by Jev</span></span>
             <span title="This product uses the TMDB API but is not endorsed or certified by TMDB.">
-              Film data from <a href="https://www.themoviedb.org/" rel="noopener">TMDB</a>, not endorsed by TMDB · Plots from{" "}
+              Film data from <a href="https://www.themoviedb.org/" rel="noopener"><img src="/tmdb.svg" alt="TMDB" /></a>, not endorsed by TMDB · Plots from{" "}
               <a href="https://en.wikipedia.org/" rel="noopener">Wikipedia</a> (CC BY-SA)
             </span>
           </footer>

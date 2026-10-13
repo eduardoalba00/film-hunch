@@ -339,6 +339,7 @@ footer {
 }
 footer a { color: var(--muted); text-decoration: none; }
 footer a:hover { color: var(--fg); }
+footer img { height: 9px; vertical-align: 0; } /* TMDB's logo, which their terms require */
 .app.searched footer { border-top: 1px solid var(--line); }
 
 /* ---------- Search problems and the sitewide notice ---------- */

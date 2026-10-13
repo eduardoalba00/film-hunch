@@ -150,6 +150,9 @@ compare option changes: `VARIANTS='[{"pool":3000},{"tail":0}]' npm run eval`.
 Film data from [TMDB](https://www.themoviedb.org/) (this product uses the TMDB API but is not
 endorsed or certified by TMDB). Plot text from Wikipedia, available under CC BY-SA 4.0.
 
+The MIT license covers this code only. TMDB's [API terms](https://www.themoviedb.org/api-terms-of-use)
+apply to anyone who runs it: commercial use of TMDB data needs a separate agreement with TMDB.
+
 ## License
 
 MIT, see [LICENSE](LICENSE).
